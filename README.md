@@ -25,4 +25,44 @@ Main goals of this task are :
  thereafter.
 + Split and frequency of each word in "PROD_NAME" column. Removed all rows containing "salsa" in "PROD_QTY" column.
 + Checked for outliers and removed outliers rows in "PROD_QTY" column.
-+ Each word value was counted in "PROD_NAME" column to extract the brand name. Combined brands written in multiple ways. Created a
++ Each word value was counted in "PROD_NAME" column to extract the brand name. Combined brands written in multiple ways.
+
+# Data Analysis on Customer Segments
+The 4 main questions answered in data analysis were:
+1. Who spends the most on chips (total sales), describing customers by lifestage and how premium their general purchasing behaviour is
+2. How many customers are in each segment
+3. How many chips are bought per customer by segment
+4. What's the average chip price by customer segment
+Groupby sum TOT_SALES column and identified top 3 highest total sales contributing segments.
+Plot the groupby into stacked bar chart with percentage text on each segment stack.
+
+# Trends and insights
+
++ Most of the people purchase chips of these brands Kettle, Smiths, Doritos, Pringles and RRD respectively as compared to other brands.
++ Budget – older families, Mainstream – young singles/couples, and Mainstream – retirees shoppers have accounted for the majority of sales.
++ Mainstream young singles/couples and retirees spend more money on chips than other purchasers mainly due to the fact that there are more customers in these segments.
++ Additionally, young, middle-aged, and mainstream individuals and couples are more inclined to pay more for each bag of chips.
++ They are also 23% more likely to purchase 'Tyrrells' and '270g' pack sizes than the rest of the population.
+
+# Task 2
+## Experimentation and uplift testing
+Extend your analysis from Task 1 to help you identify benchmark stores that allow you to test the impact of the trial store layouts on customer sales.
+
+Here is the background information on your task
+
+You are part of Quantium’s retail analytics team and have been approached by your client, the Category Manager for Chips, has asked us to test the impact of the new trial layouts with a data driven recommendation to whether or not the trial layout should be rolled out to all their stores.
+
+Here is your task
+
+Julia has asked us to evaluate the performance of a store trial which was performed in stores 77, 86 and 88.
+
+To get started use the QVI_data dataset below or your output from task 1 and consider the monthly sales experience of each store.
+
+This can be broken down by:
+
++ total sales revenue
++ total number of customers
++ average number of transactions per customer
+Create a measure to compare different control stores to each of the trial stores to do this write a function to reduce having to re-do the analysis for each trial store. Consider using Pearson correlations or a metric such as a magnitude distance e.g. 1- (Observed distance – minimum distance)/(Maximum distance – minimum distance) as a measure.
+
+Once you have selected your control stores, compare each trial and control pair during the trial period. You want to test if total sales are significantly different in the trial period and if so, check if the driver of change is more purchasing customers or more purchases per customers etc.
