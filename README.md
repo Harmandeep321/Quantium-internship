@@ -1,4 +1,9 @@
 # Quantium Virtual Experience Program in Data Analytics
+
+Completition certificate
+![image](https://github.com/user-attachments/assets/7b7a0ccc-1eb0-471b-b1d2-4c7dff65f439)
+
+
 This is program consists of 3 tasks
 All these code files were my personal submissions for this program. Except the data files which were assigned by Quantium.
 Code and Resources Used
