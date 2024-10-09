@@ -24,13 +24,13 @@ Main goals of this task are :
 
 ## Data Cleaning:
 + Date column was in integer format. So the date column was changed to date time format.
-+ There are 365 days in a year but in the DATE column there are only 364 unique values so one was missing. As it was a Christmas day and store was closed there was no anomaly. Value was kept as zero transaction for "TOT_SALES". 
++ There are 365 days in a year but in the DATE column there are only 364 unique values so one was missing. As it was a Christmas day and store was closed there was no anomaly.
 + Checked if all the products in given data are chips.
 + Some product names are written in more than one way. Example : Dorito and Doritos, Grains and GrnWves, Infusions and Ifzns, Natural and NCC, Red and RRD, Smith and Smiths and Snbts and Sunbites. It was cleaned 
  thereafter.
-+ Split and frequency of each word in "PROD_NAME" column. Removed all rows containing "salsa" in "PROD_QTY" column.
++ Split and frequency of each word in "PROD_NAME" column. Removed all rows containing "salsa". 
 + Checked for outliers and removed outliers rows in "PROD_QTY" column.
-+ Each word value was counted in "PROD_NAME" column to extract the brand name. Combined brands written in multiple ways.
++ Each word value was counted in "PROD_NAME" column to extract the brand name.
 
 # Data Analysis on Customer Segments
 The 4 main questions answered in data analysis were:
@@ -38,8 +38,9 @@ The 4 main questions answered in data analysis were:
 2. How many customers are in each segment
 3. How many chips are bought per customer by segment
 4. What's the average chip price by customer segment
-Groupby sum TOT_SALES column and identified top 3 highest total sales contributing segments.
-Plot the groupby into stacked bar chart with percentage text on each segment stack.
+
++ further explored the segment Mainstream young singles/couples that contributes most to the sales.
++ Brand and size affinity.
 
 # Trends and insights
 
